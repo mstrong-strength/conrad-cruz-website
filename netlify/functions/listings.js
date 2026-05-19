@@ -63,7 +63,7 @@ async function fetchListings(token) {
   const params = new URLSearchParams({
     $filter: filter,
     $select: SELECT_FIELDS,
-    $expand: "Media($select=MediaURL,PreferredPhotoYN;$filter=PreferredPhotoYN eq true;$top=1)",
+    $expand: "Media($select=MediaURL)",
     $orderby: "ListPrice desc",
     $top: "20",
   });
@@ -88,10 +88,9 @@ async function fetchListings(token) {
 
 function transformListings(raw) {
   return raw.map((listing) => {
-    // Extract preferred photo URL from expanded Media
+    // First photo from expanded Media (API returns them in display order)
     const media = listing.Media || [];
-    const preferredPhoto = media.find((m) => m.PreferredPhotoYN === true) || media[0];
-    const photoUrl = preferredPhoto ? preferredPhoto.MediaURL : null;
+    const photoUrl = media.length > 0 ? media[0].MediaURL : null;
 
     const address = (listing.UnparsedAddress || "").trim();
     const city = (listing.City || "").trim();
