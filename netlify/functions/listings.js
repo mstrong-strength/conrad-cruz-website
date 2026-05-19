@@ -56,7 +56,7 @@ function publicUrl(listingKey) {
 async function fetchListings(token) {
   // StandardStatus uses flags-enum syntax per RESO spec — must use 'has' not 'eq'
   const filter = [
-    "ListOfficeMlsId eq '7110'",
+    "ListOfficeMlsId eq '71110'",
     "StandardStatus has Odata.Models.StandardStatus'Active'",
   ].join(" and ");
 
