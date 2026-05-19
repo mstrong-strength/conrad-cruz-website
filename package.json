@@ -1,0 +1,9 @@
+{
+  "name": "conrad-cruz-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Conrad Cruz Real Estate Services brokerage website",
+  "engines": {
+    "node": ">=18"
+  }
+}
