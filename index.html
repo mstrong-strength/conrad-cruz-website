@@ -32,10 +32,9 @@
 <meta name="geo.position" content="40.6116;-111.8761">
 <meta name="ICBM" content="40.6116, -111.8761">
 
-<!-- Favicons -->
-<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<!-- Favicons — use the logo mark (buildings + palm) -->
+<link rel="icon" type="image/png" href="/assets/logo-mark.png">
+<link rel="apple-touch-icon" href="/assets/logo-mark.png">
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -376,7 +375,7 @@ a:focus-visible { outline: 2px solid var(--cc-blue); outline-offset: 2px; }
   justify-content: space-between;
 }
 
-.nav-logo { height: 32px; width: auto; }
+.nav-logo { height: 48px; width: auto; }
 
 .nav-links { display: flex; gap: 32px; list-style: none; }
 
@@ -418,10 +417,10 @@ a:focus-visible { outline: 2px solid var(--cc-blue); outline-offset: 2px; }
 .hero {
   background: var(--cc-cream);
   text-align: center;
-  padding: 70px 24px 50px;
+  padding: 48px 24px 36px;
 }
 
-.hero-logo { max-width: 320px; margin: 0 auto 24px; }
+.hero-logo { max-width: 280px; margin: 0 auto 16px; }
 
 .hero-eyebrow {
   font-family: var(--font-label);
@@ -430,7 +429,7 @@ a:focus-visible { outline: 2px solid var(--cc-blue); outline-offset: 2px; }
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--cc-red);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .hero-tagline {
@@ -439,7 +438,7 @@ a:focus-visible { outline: 2px solid var(--cc-blue); outline-offset: 2px; }
   font-size: 22px;
   color: var(--cc-dark);
   max-width: 600px;
-  margin: 0 auto 32px;
+  margin: 0 auto 24px;
   line-height: 1.5;
 }
 
@@ -920,8 +919,8 @@ a:focus-visible { outline: 2px solid var(--cc-blue); outline-offset: 2px; }
   .nav-links { display: none; }
   .hamburger { display: block; }
 
-  .hero { padding: 56px 24px 40px; }
-  .hero-logo { max-width: 260px; }
+  .hero { padding: 40px 24px 28px; }
+  .hero-logo { max-width: 240px; }
   .hero-tagline { font-size: 19px; }
 
   .section-heading { font-size: 30px; }
@@ -944,8 +943,8 @@ a:focus-visible { outline: 2px solid var(--cc-blue); outline-offset: 2px; }
 }
 
 @media (max-width: 480px) {
-  .hero { padding: 48px 20px 36px; }
-  .hero-logo { max-width: 220px; }
+  .hero { padding: 32px 20px 24px; }
+  .hero-logo { max-width: 200px; }
   .hero-tagline { font-size: 17px; }
   .hero-buttons { flex-direction: column; align-items: center; }
   .btn { width: 100%; max-width: 280px; text-align: center; }
